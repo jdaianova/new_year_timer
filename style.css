@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "mr_hanginglettersg";
+    src: url("fonts/mr_hanginglettersg.otf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+  }
+
+@font-face {
+    font-family: "nautiluspompilius";
+    src: url("fonts/nautiluspompilius.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+  }
+
+body {
+    background-color: rgb(4, 4, 39);
+    background-image: url('img/bgr.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.counter {
+    margin-bottom: 0px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.time {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+.time-ball {
+    border: 5px solid rgba(5, 5, 55, 0.5);
+    width: 270px;
+    height: 270px;
+    background-color: rgba(5, 5, 55, 0.7);
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.time-number {
+    color: white;
+    font-size: 150px;
+    font-family: "mr_hanginglettersg";
+}
+
+.time-text {
+    font-family: "nautiluspompilius";
+    font-size: 35px;
+    color: white;
+    text-transform: lowercase;
+}
+
+.music {
+    padding-left: 230px;
+}
+
+.music-ball {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 180px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+}
+
+.play-button {
+    width: 90px;
+}
+
+.music img {
+    width: 90px;
+}
+
+.music p {
+    font-family: "mr_hanginglettersg";
+    font-size: 20px;;
+}
+
+.title {
+    border-top: 4px solid white;
+    padding-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding-top: 16px;
+    text-align: center;
+}
+
+.title-text {
+    font-family: "mr_hanginglettersg";
+    color: rgb(5, 5, 55);
+    font-size: 105px;
+}
+
+@media all and (min-width: 1000px) and (max-width: 1199px) {
+    .title-text {
+        font-size: 85px;
+    } 
+}
+
+@media all and (min-width: 750px) and (max-width: 999px) {
+    .title-text {
+        font-size: 65px;
+    } 
+
+    .time-ball {
+        width: 200px;
+        height: 200px;
+        padding-top: 20px;
+    }
+
+    .time-number {
+        font-size: 100px;
+    }
+    
+    .time-text {
+        font-size: 25px;
+    }
+
+}
+
+@media all and (min-width: 500px) and (max-width: 749px) {
+
+    .title {
+        padding-top: 8px;
+    }
+
+    .title-text {
+        font-size: 45px;
+    } 
+
+    .time-ball {
+        width: 200px;
+        height: 200px;
+        padding-top: 20px;
+    }
+
+    .time-number {
+        font-size: 100px;
+    }
+    
+    .time-text {
+        font-size: 25px;
+    }
+
+    .music {
+        padding-left: 150px;
+    }
+}
+
+@media all and (max-width: 499px) {
+
+    body {
+        background-image: url('img/bgr_small (1).jpeg');
+    }
+    
+
+    .title {
+        padding-top: 8px;
+        padding-bottom: 35px;
+    }
+
+    .title-text {
+        font-size: 30px;
+    } 
+
+    .time-ball {
+        width: 150px;
+        height: 160px;
+        padding-top: 20px;
+    }
+
+    .time-number {
+        font-size: 80px;
+    }
+    
+    .time-text {
+        font-size: 25px;
+    }
+
+    .music {
+        padding-left: 20px;
+    }
+
+    .counter {
+        flex-wrap: wrap;
+    }
+    
+    .time {
+        width: 50%;
+        margin-bottom: 5px;
+    }
+    
+    .music-ball {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .play-button {
+        width: 60px;
+    }
+    
+    .music img {
+        width: 60px;
+    }
+}

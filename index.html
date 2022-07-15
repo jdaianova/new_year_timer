@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>timer New Year</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+
+    <audio id = "song" src="audio/belye-snezhinki.mp3" loop = 'loop' autoplay = 'allowed'></audio>
+
+    <div class="container">
+      <div class="counter">
+        <div class="time">
+          <div class="time-ball">
+            <div class="time-number days"></div>
+            <div class="time-text text-days"></div>
+          </div>
+        </div>
+
+        <div class="time">
+          <div class="time-ball">
+            <div class="time-number hours"></div>
+            <div class="time-text text-hours"></div>
+          </div>
+        </div>
+
+        <div class="time">
+          <div class="time-ball">
+            <div class="time-number minutes"></div>
+            <div class="time-text text-minutes"></div>
+          </div>
+        </div>
+
+        <div class="time">
+          <div class="time-ball">
+            <div class="time-number seconds"></div>
+            <div class="time-text text-seconds"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="music">
+        <div class="music-ball">
+          <button class="play-button">
+            <img src="img/play-button-4.png" alt="звук">
+          </button>
+          <p>Послушай!</p>
+        </div>
+      </div>
+
+      <div class="title">
+        <h1 class="title-text">осталось до Нового Года!</h1>
+      </div>
+    </div>
+
+  </body>
+
+<script src = "index.js"></script>
+
+</html>
