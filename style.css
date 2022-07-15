@@ -173,6 +173,10 @@ body {
 
 @media all and (max-width: 499px) {
 
+    .container {
+        min-height: 95vh;
+    }
+
     body {
         background-image: url('img/bgr_small (1).jpeg');
     }
